@@ -1,7 +1,7 @@
-package com.example.demo.app.users.restcontrollers;
+package com.example.demo.app.herramientas.restcontrollers;
 
-import com.example.demo.app.users.models.Herramienta;
-import com.example.demo.app.users.services.HerramientaService;
+import com.example.demo.app.herramientas.models.Herramienta;
+import com.example.demo.app.herramientas.services.HerramientaService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

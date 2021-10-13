@@ -1,7 +1,7 @@
-package com.example.demo.app.users.services;
+package com.example.demo.app.herramientas.services;
 
-import com.example.demo.app.users.models.Herramienta;
-import com.example.demo.app.users.repos.HerramientaRepository;
+import com.example.demo.app.herramientas.models.Herramienta;
+import com.example.demo.app.herramientas.repos.HerramientaRepository;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
