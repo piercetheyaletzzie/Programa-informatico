@@ -11,7 +11,7 @@ public class Cliente {
     @SequenceGenerator(name = "cliente_seq_gen", sequenceName = "cliente_id_seq", allocationSize = 1)
     @Column(name = "id")
     private Integer id;
-    @Column(name = "cliente_nombre", columnDefinition = "varchar(40)", nullable = false, unique = true)
+    @Column(name = "cliente_nombre", columnDefinition = "varchar(40)", nullable = false)
     private String clienteNombre;
     @Column(name = "email", columnDefinition = "varchar(34)", nullable = false, unique = true)
     private String eMail;
