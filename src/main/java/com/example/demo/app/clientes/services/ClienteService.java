@@ -33,10 +33,10 @@ public class ClienteService {
         return clienteRepository.save(user);
     }
 
-    public Cliente update(Integer id, Cliente user) throws Exception {
+    public Cliente update(Integer id, Cliente cliente) throws Exception {
         Cliente foundCliente = clienteRepository.findById(id).get();
         if (foundCliente != null) {
-            return clienteRepository.save(user);
+            return clienteRepository.save(cliente);
         } else {
             throw new Exception("Cliente no encontrado");
         }
