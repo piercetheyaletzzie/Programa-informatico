@@ -1,7 +1,7 @@
-package com.example.demo.app.users.restcontrollers;
+package com.example.demo.app.clientes.restcontrollers;
 
-import com.example.demo.app.users.models.Cliente;
-import com.example.demo.app.users.services.ClienteService;
+import com.example.demo.app.clientes.models.Cliente;
+import com.example.demo.app.clientes.services.ClienteService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

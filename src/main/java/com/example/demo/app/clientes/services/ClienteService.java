@@ -1,7 +1,7 @@
-package com.example.demo.app.users.services;
+package com.example.demo.app.clientes.services;
 
-import com.example.demo.app.users.models.Cliente;
-import com.example.demo.app.users.repos.ClienteRepository;
+import com.example.demo.app.clientes.models.Cliente;
+import com.example.demo.app.clientes.repos.ClienteRepository;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
