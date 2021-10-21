@@ -12,14 +12,14 @@ public class ClienteRestController {
 
     private final ClienteService clienteService;
 
-    public ClienteRestController(ClienteService clienteService) {
+    public ClienteRestController (ClienteService clienteService) {
         this.clienteService = clienteService;
     }
 
     @GetMapping("/{id}")
-    public Cliente findById(@PathVariable("id") Integer id) {
+    public Cliente findById(@PathVariable("id") Integer id_cliente) {
         try {
-            return clienteService.findById(id);
+            return clienteService.findById(id_cliente);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -47,11 +47,14 @@ public class ClienteRestController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteById(@PathVariable("id") Integer id){
+    public void deleteById(@PathVariable("id") Integer id_cliente){
         try {
-            clienteService.deleteById(id);
+            clienteService.deleteById(id_cliente);
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 }
+
+
+
