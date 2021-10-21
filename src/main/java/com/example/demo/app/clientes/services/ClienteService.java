@@ -26,7 +26,7 @@ public class ClienteService {
     }
 
     public List<Cliente> findAll() {
-        return clienteRepository.findAll(Sort.by("userName"));
+        return clienteRepository.findAll(Sort.by("cliente_nombre"));
     }
 
     public Cliente create(Cliente user) {

@@ -17,9 +17,9 @@ public class HerramientaRestController {
     }
 
     @GetMapping("/{id}")
-    public Herramienta findById(@PathVariable("id") Integer id_herramienta) {
+    public Herramienta findById(@PathVariable("id") Integer id) {
         try {
-            return herramientaService.findById(id_herramienta);
+            return herramientaService.findById(id);
         } catch (Exception e) {
             e.printStackTrace();
             return null;
@@ -47,9 +47,9 @@ public class HerramientaRestController {
     }
 
     @DeleteMapping("/{id}")
-    public void deleteById(@PathVariable("id") Integer id_herramienta){
+    public void deleteById(@PathVariable("id") Integer id){
         try {
-            herramientaService.deleteById(id_herramienta);
+            herramientaService.deleteById(id);
         } catch (Exception e) {
             e.printStackTrace();
         }

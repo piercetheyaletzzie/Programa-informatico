@@ -27,7 +27,7 @@ public class HerramientaService {
     }
 
     public List<Herramienta> findAll() {
-        return herramientaRepository.findAll(Sort.by("herramientaNombre"));
+        return herramientaRepository.findAll(Sort.by("nombre_herramienta"));
     }
 
     public Herramienta create(Herramienta herramienta) {
