@@ -8,20 +8,20 @@ public class Herramienta {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "herramienta_seq_gen")
     @SequenceGenerator(name = "herramienta_seq_gen", sequenceName = "herramienta_id_seq", allocationSize = 1)
-    @Column(name = "id")
-    private Integer id;
+    @Column(name = "herramienta_id")
+    private Integer herramientaId;
     @Column(name = "herramienta_nombre", columnDefinition = "varchar(40)", nullable = false, unique = true)
     private String herramientaNombre;
     @Column(name = "herramienta_tipo", columnDefinition = "varchar(20)", nullable = false, unique = true)
     private String herramientaTipo;
 
 
-    public Integer getId() {
-        return id;
+    public Integer getHerramientaId() {
+        return herramientaId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setHerramientaId(Integer herramientaId) {
+        this.herramientaId = herramientaId;
     }
 
     public String getHerramientaNombre() {
