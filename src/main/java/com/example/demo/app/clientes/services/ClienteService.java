@@ -29,8 +29,8 @@ public class ClienteService {
         return clienteRepository.findAll(Sort.by("clienteNombre"));
     }
 
-    public Cliente create(Cliente user) {
-        return clienteRepository.save(user);
+    public Cliente create(Cliente cliente) {
+        return clienteRepository.save(cliente);
     }
 
     public Cliente update(Integer id, Cliente cliente) throws Exception {
