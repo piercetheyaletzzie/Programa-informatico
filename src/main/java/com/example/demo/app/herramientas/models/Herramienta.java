@@ -12,7 +12,7 @@ public class Herramienta {
     private Integer id;
     @Column(name = "herramienta_nombre", columnDefinition = "varchar(40)", nullable = false, unique = true)
     private String herramientaNombre;
-    @Column(name = "herramienta_tipo", columnDefinition = "varchar(20)", nullable = false, unique = true)
+    @Column(name = "herramienta_tipo", columnDefinition = "varchar(20)", nullable = false)
     private String herramientaTipo;
 
 
