@@ -9,8 +9,8 @@ public class Cliente {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "cliente_seq_gen")
     @SequenceGenerator(name = "cliente_seq_gen", sequenceName = "cliente_id_seq", allocationSize = 1)
-    @Column(name = "id")
-    private Integer id;
+    @Column(name = "cliente_id")
+    private Integer clienteId;
     @Column(name = "cliente_nombre", columnDefinition = "varchar(40)", nullable = false)
     private String clienteNombre;
     @Column(name = "email", columnDefinition = "varchar(34)", nullable = false, unique = true)
@@ -21,12 +21,12 @@ public class Cliente {
     public Cliente() {
     }
 
-    public Integer getId() {
-        return id;
+    public Integer getClienteId() {
+        return clienteId;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setClienteId(Integer clienteId) {
+        this.clienteId = clienteId;
     }
 
     public String getClienteNombre() {
@@ -53,8 +53,6 @@ public class Cliente {
         this.telefono = telefono;
     }
 }
-
-
 
 
 
